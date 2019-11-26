@@ -11,14 +11,17 @@ public class LaunchUrl {
 
 	WebDriver driver;
 
-	String email = "ptggroup1507@gmail.com";
+	String email = "ptggroup15hj@gmail.com";
 	protected String psw = "Welcome@123";
 
 	@Test
 	public void LaunchBrowser() throws Exception {
 
-		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver.exe");
+		driver = new FirefoxDriver();
+		//WebDriver driver = new RemoteWebDriver(new URL("http://15.206.16.180/"), desiredCapabilities);
+		//driver = new Chromedriver();
 		driver.get("http://15.206.16.180/");
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
