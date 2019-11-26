@@ -23,9 +23,7 @@ public class Registration {
 	public void regDetails(String emailid, String password) throws Exception {
 
 		// Click on Register link in Login page
-		driver.findElement(
-				By.xpath("/html/body/app-root/app-register/section/div/div[2]/app-login/div/div/form/div[4]/a"))
-				.click();
+		driver.findElement(By.xpath("/html/body/app-root/app-register/section/div/div[2]/app-login/div/div/form/div[4]/a")).click();
 		Thread.sleep(2000);
 
 		// Registration details
@@ -49,7 +47,10 @@ public class Registration {
 		Thread.sleep(2000);
 
 		// Click on Login button
-		driver.findElement(By.xpath("//button[@class='btn text-success mt-4']")).click();
+		//driver.findElement(By.xpath("//button[@class='btn text-success mt-4']")).click();
+		driver.findElement(By.xpath("//button[@class='font-weight-bold']")).click();
+
+
 
 
 		System.out.println("New user registered successfully");
