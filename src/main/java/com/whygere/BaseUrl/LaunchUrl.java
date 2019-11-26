@@ -18,7 +18,7 @@ public class LaunchUrl {
 	public void LaunchBrowser() throws Exception {
 
 		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
-		driver = new RemoteWebDriver();
+		driver = new Chromedriver();
 		driver.get("http://15.206.16.180/");
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
