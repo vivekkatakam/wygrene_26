@@ -47,13 +47,13 @@ public class Registration {
 		Thread.sleep(2000);
 
 		// Click on Login button
-		//driver.findElement(By.xpath("//button[@class='btn text-success mt-4']")).click();
-		driver.findElement(By.xpath("//button[@class='font-weight-bold']")).click();
-
-
+		driver.findElement(By.xpath("//button[@class='btn text-success mt-4']")).click();
+		//driver.findElement(By.xpath("//button[@class='font-weight-bold']")).click();
 
 
 		System.out.println("New user registered successfully");
+
+		Thread.sleep(2000);
 
 		// Screenshot for Successful registration
 
